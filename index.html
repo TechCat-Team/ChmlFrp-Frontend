@@ -1,0 +1,196 @@
+﻿<!-- Copyright © 2021 - 2023 ChmlFrp All rights reserved. -->
+<!-- 此页面使用animate.css3动画库及bootstrap/fullPage框架搭建 -->
+<!-- 此页面的所有图片/视频素材均为自创，未经允许请勿搬用 -->
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>ChmlFrp | 内网穿透 - 免费,高速,稳定,不限流量的端口映射工具。</title>
+	<!--默认样式-->
+	<link rel="stylesheet" href="css/reset.css">
+	<!--响应式框架-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<!--animate.css3动画库-->
+	<link rel="stylesheet" href="css/animate.css">
+	<!--页面滚动基础样式-->
+	<link rel="stylesheet" href="css/jquery.fullPage.css" />
+	<!--导航样式-->
+	<link rel="stylesheet" href="css/head.css" />
+	<!--图片和滚屏样式-->
+	<link rel="stylesheet" href="css/index.css">
+	<!--尾页粒子-->
+	<script type="text/javascript" src="js/lizi/jquery.min.js"></script>
+	<!--尾页CSS-->
+	<link type="text/css" href="css/lizi/style.css" rel="stylesheet" />
+</head>
+
+<body>
+	<!-- 导航 -->
+	<header class="header">
+		<div class="container clearfix">
+			<img src="https://chmlfrp.cn/favicon.ico" class="tptp" alt="ChmlFrp Logo" />
+			<div class="fr nav">
+				<ul class="navbar_nav" data-in="fadeInDown" data-out="fadeOutUp">
+					<li>
+						<a href="#hero">首页</a>
+					</li>
+					<li>
+						<a href="#one">介绍</a>
+					</li>
+					<li>
+						<a href="#two">特色</a>
+					</li>
+					<li>
+						<a href="#three">关于</a>
+					</li>
+					<li>
+						<a href="https://docs.chcat.cn/">使用文档</a>
+					</li>
+					<li>
+						<a href="https://panel.chmlfrp.cn/">管理面板</a>
+					</li>
+				</ul>
+			</div>
+			<a href="javascript:void(0)" id="navToggle">
+				<span></span>
+			</a>
+		</div>
+	</header>
+	<!--移动端的导航-->
+	<div class="m_nav">
+		<div class="top clearfix">
+			<img src="https://chmlfrp.cn/favicon.ico" alt="ChmlFrp Logo" class="closed" />
+		</div>
+		<div class="logo">
+			<img src="https://chmlfrp.cn/favicon.ico" alt="ChmlFrp Logo" />
+		</div>
+		<ul class="ul" data-in="fadeInDown" data-out="fadeOutUp">
+			<li>
+				<a href="#hero">首页</a>
+			</li>
+			<li>
+				<a href="#one">介绍</a>
+			</li>
+			<li>
+				<a href="#two">特色</a>
+			</li>
+			<li>
+				<a href="#three">关于</a>
+			</li>
+			<li>
+				<a href="https://panel.chmlfrp.cn/">管理面板</a>
+			</li>
+		</ul>
+	</div>
+	<!-- 内容 -->
+	<div id="index_main" class="index_main">
+		<!--导航-->
+		<div class="section section1">
+			<div class="container animated fadeInUp">
+				<h1 class="section1_h1">ChmlFrp | 端口映射</h1>
+				<h2 class="section1_h2">免费.高速.稳定.不限流量的端口映射工具</h2>
+				<div class="main">
+					<button class="btn" id="lijishiyong">管理面板</button>
+					<button class="btn" style="margin-left: 10px;" id="shiyongwendang">使用文档</button>
+				</div>
+			</div>
+		</div>
+		<div class="section section2">
+			<div class="container" style="margin-left: 100px;">
+				<h1 style="color: #f7f7f7;">为什么你需要端口穿透？</h1>
+				<h3>游戏联机、远程桌面、建站、远程共享、远程文件访问等操作。</h3>
+				<h3>无公网IP进行远程操作，使用ChmlFrp！</h3>
+			</div>
+		</div>
+		<div class="section section3">
+			<div class="container" style="margin-left: 100px;">
+				<h1 style="color: #f7f7f7; margin-bottom: 100px; margin-left: 140px;">我们的优点</h1>
+				<div class="container" style="margin-left: 100px; display: flex; flex-wrap: nowrap;">
+					<div class="card">
+						<h2>操作及兼容性</h2>
+						<p>我们的 frpc
+							几乎可以运行在所有的设备上，无论您是linux还是windows。又或者是群晖，我们都能完美适配。除此之外我们还为小白提供了Windows图形客户端，0基础3分钟即可学会使用。</p>
+					</div>
+					<div class="card">
+						<h2>软件面板</h2>
+						<p>我们的 v2 面板基于 Vue + ElementUI 开发，拥有超高的性能，美观简约的UI页面。除了面板，我们还有QQBot、图形客户端。若还是不满足，我们还有丰富的第三方社区。
+						</p>
+					</div>
+					<div class="card">
+						<h2>稳定高速</h2>
+						<p>我们拥有国内国外10+高性能企业专线节点，且80%以上均为高防节点。我们不限制流量，还可以通过签到白嫖VIP。除此之外，我们的国外节点限速为基础限速的4倍。</p>
+					</div>
+					<div class="card">
+						<h2>高度自定义</h2>
+						<p>官方启动器用着不满意？我们还开放了第三方功能！在这里有用户开发的第三方面板、软件、游戏插件、机器人等！您还可以通过我们的开放API平台，自主研发适合您的程序！</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section section4">
+			<div class='particle-network-animation'>
+				<footer>
+					<div class="footer_test">
+						<div>
+							<a style="color: #f7f7f7;" href="https://panel.chmlfrp.cn">管理面板</a>
+							|
+							<a style="color: #f7f7f7;" href="https://docs.chcat.cn/docs/The_Privacy">隐私策略</a>
+							|
+							<a style="color: #f7f7f7;" href="https://docs.chcat.cn/docs/Term_of_service">服务条款</a>
+							|
+							<a style="color: #f7f7f7;" href="https://docs.chcat.cn/">使用文档</a>
+							|
+							<a style="color: #f7f7f7;"
+								href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=Pz3PtGpjsPo8rQQ6cqPCjlVaz-u6y0EM&authKey=jSwtgPD0mc9berZBSnfyw8eJoaGFXflpEWSj%2FlqPNpq%2BzfxGVfK7kAARfANsJYWo&noverify=0&group_code=992067118">联系我们</a>
+							|
+							<a style="color: #f7f7f7;" href="mailto:chaoji@chcat.cn">加入我们</a>
+							|
+							<a style="color: #f7f7f7;" href="mailto:chaoji@chcat.cn">违规举报</a>
+						</div>
+						<div style="margin-top: 20px; color: #909399;">
+							<span>杜绝违法内容，请遵循法律法规和政府要求合规使用ChmlFrp。本站可能与老旧浏览器不兼容。</span>
+							<div>
+								<a style="color: #909399;" href="https://cfu.chmlfrp.cn">CFU 统一识别码：6OF1QSMO</a> | <a
+									style="color: #909399;"
+									href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=Pz3PtGpjsPo8rQQ6cqPCjlVaz-u6y0EM&authKey=jSwtgPD0mc9berZBSnfyw8eJoaGFXflpEWSj%2FlqPNpq%2BzfxGVfK7kAARfANsJYWo&noverify=0&group_code=992067118">QQ交流群</a>
+							</div>
+							<span>官方社交账户：</span>
+							<a href="https://afdian.net/a/chm-chaoji" style="color: #909399;">爱发电</a>
+							|
+							<a href="https://space.bilibili.com/381475303" style="color: #909399;">BiliBIli</a>
+							|
+							<a href="https://github.com/chaoji233" style="color: #909399;">Github</a>
+							|
+							<a href="https://gitee.com/chaoji233" style="color: #909399;">Gitee</a>
+						</div>
+						<div>
+							<span style="color: #909399;">ChmlFrp由 <a href="https://cdn.chcat.cn"
+									style="color: #909399;">怊猫CDN</a> 提供安全加速服务 | 版权所有 © 2021 - 2023 <a
+									href="https://www.chmlfrp.cn" style="color: #909399;">ChmlFrp(怊猫映射)</a> 及 <a
+									style="color: #909399;" href="https://chcat.cn">怊猫科技</a> 保留所有权利。</span>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/lizi/script.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.fullPage.min.js"></script>
+	<script src="js/index_slick.js"></script>
+	<script src="js/index.js"></script>
+	<script>
+		document.getElementById("lijishiyong").addEventListener("click", function () {
+			window.location.href = "https://panel.chmlfrp.cn";
+		});
+		document.getElementById("shiyongwendang").addEventListener("click", function () {
+			window.location.href = "https://docs.chcat.cn";
+		});
+	</script>
+</body>
+
+</html>
