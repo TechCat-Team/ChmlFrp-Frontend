@@ -1,99 +1,49 @@
-//banner
-$('.index_banner').slick({
-    autoplay: true, 
-    arrows: false,
-    dots:false,
-    infinite: true,
-    speed: 500,
-    autoplaySpeed: 5000,
-    pauseOnHover: false,
-    fade: true,
-    responsive: [
-      {
-        breakpoint: 992,
-        settings: {
-          dots: true
-        }
-      }
-    ]
+function toggleMenu() {
+    const menu = document.getElementById('mobileMenu');
+    const backdrop = document.getElementById('backdrop');
+    const button = document.getElementById('menuButton');
+    const isOpen = menu.getAttribute('data-state') === 'open';
+
+    menu.setAttribute('data-state', isOpen ? 'closed' : 'open');
+    backdrop.classList.toggle('hidden', !isOpen);
+    menu.classList.toggle('transform', !isOpen);
+    menu.classList.toggle('translate-x-full', isOpen);
+    backdrop.classList.toggle('opacity-50', !isOpen);
+}
+
+// 页面加载动画
+document.addEventListener('DOMContentLoaded', function () {
+    // 初始化AOS
+    AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true
+    });
+
+    // 为导航链接添加悬停动画
+    const navLinks = document.querySelectorAll('nav a');
+    navLinks.forEach(link => {
+        link.addEventListener('mouseenter', () => {
+            link.style.transform = 'translateY(-2px)';
+        });
+        link.addEventListener('mouseleave', () => {
+            link.style.transform = 'translateY(0)';
+        });
+    });
+
+    // 为按钮添加点击动画
+    const buttons = document.querySelectorAll('button, a[href="#"]');
+    buttons.forEach(button => {
+        button.addEventListener('click', function (e) {
+            if (this.tagName === 'A' && this.getAttribute('href') === '#') {
+                e.preventDefault();
+            }
+
+            // 添加点击效果
+            this.style.transform = 'scale(0.95)';
+            setTimeout(() => {
+                this.style.transform = 'scale(1)';
+            }, 200);
+        });
+    });
 });
-
-
-$('.index_banner').init(function(slick){
-    $('.index_banner .item.slick-current').addClass('active').siblings().removeClass('active')
-})
-$('.index_banner').on('afterChange',function(slick,currentSlide){
-    $('.index_banner .item.slick-current').addClass('active').siblings().removeClass('active');
-    var _index = $('.index_banner').slick('slickCurrentSlide')
-    $('.section1 .number span').eq(_index).addClass('active').siblings().removeClass('active')
-})
-$('.section1 .number span').click(function(){
-    var _index = $(this).index();
-    $('.index_banner').slick('slickGoTo',_index);
-    $(this).addClass("active").siblings().removeClass("active")
-});
-$('.section1 .prev').click(function(){
-  $('.index_banner').slick('slickPrev')
-})
-$('.section1 .next').click(function(){
-  $('.index_banner').slick('slickNext');
-});
-
-//导航
-//超过一定高度导航添加类名
-var nav=$("header"); //得到导航对象  
-var win=$(window); //得到窗口对象  
-var sc=$(document);//得到document文档对象。  
-win.scroll(function(){  
-  if(sc.scrollTop()>=100){  
-    nav.addClass("on");   
-  }else{  
-   nav.removeClass("on");  
-  }  
-})   
-
-//移动端展开nav
-$('#navToggle').on('click',function(){
-	$('.m_nav').addClass('open');
-})
-//关闭nav
-$('.m_nav .top .closed').on('click',function(){
-	$('.m_nav').removeClass('open');
-})
-
-//二级导航  移动端
-$(".m_nav .ul li").click(function() {
-	$(this).children("div.dropdown_menu").slideToggle('slow')
-    $(this).siblings('li').children('.dropdown_menu').slideUp('slow');				
-});
-
-//全屏滚动
-$('#index_main').fullpage({
-	'navigation': true,
-	slidesNavigation: true,
-	controlArrows: false,
-	continuousHorizontal:true,
-	scrollingSpeed:1000,
-	showActiveTooltip :true, 
-	anchors: ['hero', 'one', 'two', 'three'],
-	loopHorizontal: true,
-	afterLoad: function(anchorLink, index){
-		if(index == 1){
-			$('header').removeClass('on');
-		}
-		if(index == 2){
-			$('header').addClass('on');
-			$('.section2 h3').addClass('animated fadeInUp').css('animation-delay', '.1s');
-		}
-		if(index == 3){
-			$('header').addClass('on');
-			$('.section3 h3').addClass('animated fadeInUp').css('animation-delay', '.1s');
-		}
-		if(index == 4){
-			$('header').addClass('on');
-			$('.section4 h3').addClass('animated fadeInUp').css('animation-delay', '.1s');
-		}
-	},
-	onLeave: function(index, direction){
-	}
-})

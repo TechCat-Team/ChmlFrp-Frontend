@@ -1,234 +1,87 @@
+@keyframes float {
 
-/*banner背景图片动画*/
-@-webkit-keyframes scale-bg{
-	from{
-		-webkit-transform:scale(1.2);
-		transform:scale(1.2);
-	}
-	to{
-		-webkit-transform:scale(1);
-		transform:scale(1);
-	}
-}
-@keyframes scale-bg{
-	from{
-		-webkit-transform:scale(1.2);
-		transform:scale(1.2);
-	}
-	to{
-		-webkit-transform:scale(1);
-		transform:scale(1);
-	}
-}
-
-/* 第一页h1的元素 */
-.section1_h1 {
-    color: #f7f7f7;
-    font-size: 70px;
-    letter-spacing: 5px;
-    text-align: center; /* 添加文本居中对齐 */
-}
-
-/* 第一页h2的元素 */
-.section1_h2 {
-	color: #f7f7f7;
-    font-size: 25px;
-    text-align: center; /* 添加文本居中对齐 */
-    margin-top: 30px; /* 控制h2元素与h1元素之间的垂直间距 */
-}
-
-/* 按钮动态元素 */
-.main {
-	margin-top: 30px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.btn {
-	width: 160px;
-	height: 55px;
-	font-size: 18px;
-	background: #fff;
-	border: none;
-	border-radius: 50px;
-	color: #000;
-	outline: none;
-	cursor: pointer;
-	transition: all 0.4s;
-}
-.btn:hover {
-	box-shadow: inset 0 0 0 4px #ef476f, 
-				inset 0 0 0 8px #ffd166, 
-				inset 0 0 0 12px #06d6a0,
-				inset 0 0 0 16px #118ab2;
-	background: #073b4c;
-	color: #fff;
-}
-
-/* 基本卡片样式 */
-.card {
-	width: 260px; /* 卡片的宽度 */
-	height: 300px;
-	padding: 20px; /* 卡片内边距 */
-	background-color: #00000068; /* 卡片背景颜色 */
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
-	border-radius: 10px; /* 圆角边框 */
-	margin: 10px; /* 卡片之间的间距 */
-}
-.card h2 {
-	margin-top: -3px;
-	color: #f7f7f770;
-	font-weight: bolder;
-	font-size: 24px; /* 标题字体大小 */
-	margin-bottom: 10px; /* 标题与内容之间的间距 */
-}
-.card p {
-	letter-spacing: 3px;
-	color: #f7f7f750;
-	font-size: 16px; /* 文本字体大小 */
-}
-.card:hover {
-	transform: translateY(-5px); /* 提升卡片略微抬高 */
-	transition: transform 0.2s ease; /* 添加平滑过渡效果 */
-}
-
-
-/*banner */
-.index_main{
-	background: #f7f7f7;
-}
-.index_main .section1{
-	width: 100%;
-	height: 100%;
-	background: url(https://pic.imgdb.cn/item/653be83fc458853aefb889ec.png) no-repeat;
-	background-size: 100% 100%;
-}
-
-.index_main .section2{
-	width: 100%;
-	height: 100%;
-	background: url(https://pic.imgdb.cn/item/64fc42df661c6c8e54f785d7.jpg) no-repeat;
-	background-size: 100% 100%;
-}
-.index_main .section2 h3{
-	color: #f7f7f7;
-}
-.index_main .section3{
-	width: 100%;
-	height: 100%;
-	background: url(https://pic.imgdb.cn/item/653beb19c458853aefc79542.png) no-repeat;
-	background-size: 100% 100%;
-}
-.index_main .section3 h3{
-	text-align: center;
-}
-.index_main .section4{
-	color: #f7f7f7;
-	font-size: 16px;
-}
-.index_main .section4 h3{
-	text-align: center;
-}
-
-@media only screen and (max-width: 1600px){
-	.index_main .section1 .index_banner .item .inner .block_txt h4{
-		font-size: 28px;
-	}
-	.index_main .section1 .index_banner .item .inner .block_txt h2{
-		font-size: 60px;
-	}
-	.index_main .section1 .index_banner .item .inner .block_txt h3{
-		font-size: 20px;
-	}
-}
-@media only screen and (max-width: 1440px){
-	.index_main .section1 .index_banner .item .inner .block_txt h4{
-		font-size: 24px;
-	}
-	.index_main .section1 .index_banner .item .inner .block_txt h2{
-		font-size: 40px;
-	}
-	.index_main .section1 .index_banner .item .inner .block_txt h3{
-		font-size: 18px;
-		margin-top: 5px;
-	}
-}
-@media only screen and (max-width: 1366px){
-	.index_main .section1 .index_banner .item .inner .block_txt h4{
-		font-size: 20px;
-	}
-	.index_main .section1 .index_banner .item .inner .block_txt h2{
-		font-size: 26px;
-	}
-	.index_main .section1 .index_banner .item .inner .block_txt h3{
-		font-size: 16px;
-	}
-	.index_main .section1 .index_banner .slick-arrow{
-		background-size: auto 30px;
-	}
-}
-@media only screen and (max-width: 1300px){
-
-}
-@media only screen and (max-width: 1199px){
-	.index_main .section1 .index_banner .item .inner .block_txt h4{
-		font-size: 18px;
-	}
-	.index_main .section1 .index_banner .item .inner .block_txt h2{
-		font-size: 22px;
-		}
-	.index_main .section1 .index_banner .item .inner .block_txt h3{
-		font-size: 14px;
-	}
-}
-@media only screen and (max-width: 992px){
-	.index_main .section1 .index_banner .item{
-		height: 100vh;
-	}
-	.index_main .section1 .index_banner .item .inner .block_txt{
-		left: 0;
-		right:0;
-		margin: 0 auto;
-		padding: 0 20px;
-		top: 42%;
-	}
-	.index_main .section1 .index_banner .slick-arrow{
-		display: none !important;
-	}
-    .index_main .section1 .index_banner .slick-dots{
-    	position: absolute;
-    	bottom: 12px;
+    0%,
+    100% {
+        transform: translateY(0);
     }
-    .index_main .section1 .index_banner .slick-dots li{
-    	width: 12px;
-    	height: 12px;
-    	border-radius: 50%;
-    	border:2px solid #fff;
-    }
-    .index_main .section1 .index_banner .slick-dots li button{
-    	display: none;
-    }
-    .index_main .section1 .index_banner .slick-dots li.slick-active{
-    	background: #fff;
-    }
-	.index_main .section1 .number{
-		bottom: 12%;
-		display: none;
-	}
-	.index_main .section1 .number span{
-		margin-right: 22px;
-	}
-	.index_main .section1 .number span:after{
-		bottom: -14px;
-	}
 
+    50% {
+        transform: translateY(-10px);
+    }
 }
-@media only screen and (max-width: 767px){
-    
+
+.float-animation {
+    animation: float 3s ease-in-out infinite;
 }
-@media only screen and (max-width: 340px){
- 
+
+.hover-scale {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-@media only screen and (max-width: 320px){
-	
+
+.hover-scale:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.text-gradient {
+    background: linear-gradient(90deg, #4f46e5, #ec4899);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradientShift 5s ease infinite;
+    background-size: 200% 200%;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.btn-pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(79, 70, 229, 0.7);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(79, 70, 229, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(79, 70, 229, 0);
+    }
+}
+
+/* 加载期间禁用滚动 */
+.loading {
+    overflow: hidden;
+    height: 100vh;
+    position: fixed;
+    width: 100%;
 }
