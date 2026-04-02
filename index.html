@@ -1,11 +1,11 @@
-<!-- Copyright © 2021 - 2025 南充市轻爪网络科技有限公司 All rights reserved. -->
+<!-- Copyright © 2021 - 2026 南充市轻爪网络科技有限公司 All rights reserved. -->
 <!-- Apache-2.0 License - https://github.com/TechCat-Team/ChmlFrp-Frontend -->
 <!DOCTYPE html>
 <html lang="zh-Hans">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ChmlFrp | 内网穿透 - 免费,高速,稳定,不限流量的端口映射工具。</title>
+    <title>ChmlFrp | 内网穿透 - 免费,高速,稳定,不限流量的端口映射工具</title>
     <meta
       name="description"
       content="ChmlFrp是一款不限流量,免费高速且稳定的端口映射工具.为您提供免费的内网穿透功能。可以用于MC联机，远程桌面，远程共享，游戏联机等任何需要用到公网IP的地方。"
@@ -13,6 +13,49 @@
     <meta
       name="keywords"
       content="免费高速内网穿透工具,ChmlFrp,内网穿透,免费frp,免费内网穿透,frp,端口映射,不限流量的映射"
+    />
+    <link rel="canonical" href="https://www.chmlfrp.net/" />
+    <meta
+      name="robots"
+      content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta property="og:site_name" content="ChmlFrp" />
+    <meta
+      property="og:title"
+      content="ChmlFrp | 免费、高速、稳定的内网穿透与端口映射工具"
+    />
+    <meta
+      property="og:description"
+      content="ChmlFrp 提供免费不限流量的内网穿透服务，支持 MC 联机、远程桌面、远程共享、NAS 访问与更多公网映射场景。"
+    />
+    <meta property="og:url" content="https://www.chmlfrp.net/" />
+    <meta
+      property="og:image"
+      content="https://www.chmlfrp.net/images/home.webp"
+    />
+    <meta property="og:image:alt" content="ChmlFrp 控制面板首页预览" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="ChmlFrp | 免费、高速、稳定的内网穿透与端口映射工具"
+    />
+    <meta
+      name="twitter:description"
+      content="免费不限流量，支持端口映射、游戏联机、远程桌面与 NAS 异地访问。"
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.chmlfrp.net/images/home.webp"
+    />
+    <link rel="dns-prefetch" href="//cf-v2.uapis.cn" />
+    <link rel="preconnect" href="https://cf-v2.uapis.cn" crossorigin />
+    <link
+      rel="preload"
+      as="image"
+      href="./images/home.webp"
+      fetchpriority="high"
     />
     <link rel="icon" href="favicon.ico" />
     <!-- TailwindCSS -->
@@ -23,9 +66,65 @@
     <link href="./css/aos.css" rel="stylesheet" />
     <!-- ChmlFrp -->
     <link href="./css/index.css" rel="stylesheet" />
-    <script src="./js/index.js"></script>
+    <script src="./js/index.js" defer></script>
     <!-- Three.js -->
-    <script src="./js/three.min.js"></script>
+    <script src="./js/three.min.js" defer></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "name": "ChmlFrp",
+            "url": "https://www.chmlfrp.net/",
+            "logo": "https://www.chmlfrp.net/favicon.ico",
+            "sameAs": ["https://github.com/TechCat-Team"]
+          },
+          {
+            "@type": "SoftwareApplication",
+            "name": "ChmlFrp",
+            "applicationCategory": "NetworkingApplication",
+            "operatingSystem": "Windows, macOS, Linux, FreeBSD, ARM",
+            "description": "免费、高速、稳定且不限流量的内网穿透与端口映射服务。",
+            "url": "https://www.chmlfrp.net/",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "CNY"
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "ChmlFrp是免费的吗？",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "ChmlFrp基础版是完全免费的，不收取费用且不限制流量使用；同时也提供更高规格的付费计划。"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "支持哪些操作系统？",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "支持 Windows、macOS、Linux、FreeBSD 以及 ARM 架构设备。"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "ChmlFrp安全吗？",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "平台采用数据加密、传输层 TLS 与持续安全防护措施保障安全，同时建议用户不要暴露敏感服务并做好自身安全加固。"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
   </head>
 
   <body class="overflow-x-hidden">
@@ -253,6 +352,9 @@
           <img
             src="./images/panel-home.webp"
             alt="产品图"
+            fetchpriority="high"
+            decoding="async"
+            loading="eager"
             class="mx-auto rounded-2xl shadow-2xl max-w-[1200px] w-[92vw] hover-scale transition-transform duration-500"
           />
         </div>
@@ -1757,10 +1859,10 @@
       </div>
     </footer>
 
-    <script src="./js/three-background.js"></script>
+    <script src="./js/three-background.js" defer></script>
 
     <!-- AOS JS -->
-    <script src="./js/aos.js"></script>
+    <script src="./js/aos.js" defer></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         fetch("https://cf-v2.uapis.cn/panelinfo")
